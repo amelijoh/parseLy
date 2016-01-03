@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var drinkArray = ["vodka", "regretFilledBeverage"]
+    var drinkArray = [Alcohol]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +25,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell!
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
         }
         
-        cell.textLabel?.text = drinkArray[indexPath.row]
+        cell.textLabel?.text = drinkArray[indexPath.row].alcoholName
+        cell.detailTextLabel?.text = String(drinkArray[indexPath.row].alcoholRegretLevel)
         
         return cell
     }

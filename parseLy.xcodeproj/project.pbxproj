@@ -12,6 +12,8 @@
 		3BB40F9B1C39C69B005E6DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB40F991C39C69B005E6DD1 /* Main.storyboard */; };
 		3BB40F9D1C39C69B005E6DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB40F9C1C39C69B005E6DD1 /* Assets.xcassets */; };
 		3BB40FA01C39C69B005E6DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB40F9E1C39C69B005E6DD1 /* LaunchScreen.storyboard */; };
+		3BB40FA81C39D541005E6DD1 /* Alcohol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB40FA71C39D541005E6DD1 /* Alcohol.swift */; };
+		3BB40FAA1C39DADF005E6DD1 /* AddAlcoholViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB40FA91C39DADF005E6DD1 /* AddAlcoholViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3BB40F9C1C39C69B005E6DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BB40F9F1C39C69B005E6DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BB40FA11C39C69B005E6DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB40FA71C39D541005E6DD1 /* Alcohol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alcohol.swift; sourceTree = "<group>"; };
+		3BB40FA91C39DADF005E6DD1 /* AddAlcoholViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlcoholViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				3BB40F9C1C39C69B005E6DD1 /* Assets.xcassets */,
 				3BB40F9E1C39C69B005E6DD1 /* LaunchScreen.storyboard */,
 				3BB40FA11C39C69B005E6DD1 /* Info.plist */,
+				3BB40FA71C39D541005E6DD1 /* Alcohol.swift */,
+				3BB40FA91C39DADF005E6DD1 /* AddAlcoholViewController.swift */,
 			);
 			path = parseLy;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB40FA81C39D541005E6DD1 /* Alcohol.swift in Sources */,
 				3BB40F981C39C69B005E6DD1 /* ViewController.swift in Sources */,
 				3BB40F961C39C69B005E6DD1 /* AppDelegate.swift in Sources */,
+				3BB40FAA1C39DADF005E6DD1 /* AddAlcoholViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +292,7 @@
 				3BB40FA61C39C69B005E6DD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
