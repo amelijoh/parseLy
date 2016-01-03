@@ -33,15 +33,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Wj-Vu-chK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Wj-Vu-chK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="lsl-nx-4d8">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="48" id="lsl-nx-4d8">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lsl-nx-4d8" id="DEm-fJ-1cQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="47.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -57,10 +57,13 @@
                     <navigationItem key="navigationItem" id="1Cb-Sq-cIa">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RlD-gl-TMa">
                             <connections>
-                                <segue destination="oVP-as-kXv" kind="push" id="AEf-WW-sYc"/>
+                                <segue destination="oVP-as-kXv" kind="push" identifier="addAlcoholSegue" id="AEf-WW-sYc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="alcoholTableView" destination="8Wj-Vu-chK" id="AYW-ta-kU9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,6 +91,7 @@
                                 <state key="normal" title="REMEMBER"/>
                                 <connections>
                                     <action selector="RememberButton:" destination="oVP-as-kXv" eventType="touchUpInside" id="lXb-a5-Ism"/>
+                                    <segue destination="LaT-dl-Nht" kind="unwind" unwindAction="unwindToVC:" id="Hzj-l8-0Sh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOW MUCH REGRET?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ou-aR-Ztx">
@@ -117,6 +121,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Orn-K5-TzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="LaT-dl-Nht" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="515" y="289"/>
         </scene>
